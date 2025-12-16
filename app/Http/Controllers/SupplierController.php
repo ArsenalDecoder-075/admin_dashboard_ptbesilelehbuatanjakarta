@@ -34,10 +34,10 @@ class SupplierController extends Controller
             ->with('success', 'Supplier berhasil ditambahkan');
     }
 
-    public function show(Supplier $supplier)
-    {
-        return view('suppliers.show', compact('supplier'));
-    }
+    // public function show(Supplier $supplier)
+    // {
+    //     return view('suppliers.show', compact('supplier'));
+    // }
 
     public function edit(Supplier $supplier)
     {

@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
 
     <!-- AdminLTE CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
@@ -34,9 +35,11 @@
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <!-- Authentication Dropdown -->
+
           <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-              {{ Auth::user()->name }}
+                <i class="bi bi-person-vcard"></i>
+                {{ Auth::user()->name }}
             </a>
 
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -61,25 +64,15 @@
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="{{ route('dashboard') }}" class="brand-link">
-          <i class="bi bi-highlights fs-2 ml-3"></i>
-          <span class="brand-text font-weight-light">PT. Besi Leleh<br>Buatan Jakarta</span>
+          <i class="bi bi-highlights"></i>
+          <span class="brand-text font-weight-bold">PT. BLBJ</span>
+          <p>Besi Leleh Buatan Jakarta</p>
         </a>
 
         <!-- Sidebar -->
         <div class="sidebar">
-          <!-- Sidebar user panel -->
-          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-              <i class="bi bi-person-circle img-circle elevation-2"></i>
-            </div>
-            <div class="info">
-              <a href="{{ route('profile.edit') }}" class="d-block">{{ Auth::user()->name }}</a>
-              <small class="text-muted">{{ Auth::user()->email }}</small>
-            </div>
-          </div>
-
           <!-- Sidebar Menu -->
-          <nav class="mt-2">
+          <nav class="mt-1">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <!-- Dashboard -->
               <li class="nav-item">
@@ -217,7 +210,7 @@
         <strong>Copyright &copy; {{ date('Y') }} <a href="#">PT. Besi Leleh Buatan Jakarta</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
-          <b>Version</b> 1.0.0
+            <span>Kelompok Arsa</span> | <b>Version</b> 1.0.0
         </div>
       </footer>
     </div>

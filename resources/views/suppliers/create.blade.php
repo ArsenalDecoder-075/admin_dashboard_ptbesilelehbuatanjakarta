@@ -7,15 +7,6 @@
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="card">
-                {{-- <div class="card-header">
-                    <h3 class="card-title">Tambah Supplier Baru</h3>
-                    <div class="card-tools">
-                        <a href="{{ route('suppliers.index') }}" class="btn btn-secondary btn-sm">
-                            <i class="fas fa-arrow-left"></i> Kembali
-                        </a>
-                    </div>
-                </div> --}}
-                <!-- /.card-header -->
                 <div class="card-body">
                     <form action="{{ route('suppliers.store') }}" method="POST">
                         @csrf
